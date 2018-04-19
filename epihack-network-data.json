@@ -1,42 +1,44 @@
 {
   "nodes": [
-    {
-      "id": "n0",
-      "label": "A node",
-      "x": 0,
-      "y": 0,
-      "size": 3
-    },
-    {
-      "id": "n1",
-      "label": "Another node",
-      "x": 3,
-      "y": 1,
-      "size": 2
-    },
-    {
-      "id": "n2",
-      "label": "And a last one",
-      "x": 1,
-      "y": 3,
-      "size": 1
-    }
+    {"id": "1", "label": "Doe Jane", "x":1, "y": 6, "size": 5},
+    {"id": "2", "label": "Smith John", "x":4, "y": 4, "size": 5},
+    {"id": "3", "label": "Sendi George", "x":8, "y": 7, "size": 5},
+    {"id": "4", "label": "Mugisha Harvey", "x":7, "y": 1, "size": 5},
+    {"id": "5", "label": "Mutebi Gavin", "x":5, "y": 5, "size": 5},
+    {"id": "6", "label": "Jjuu Rhona", "x":5, "y": 10, "size": 5},
+    {"id": "7", "label": "Kalen Jack", "x":5, "y": 6, "size": 5, "color": "#ec5148"},
+    {"id": "8", "label": "Nass Fai", "x":4, "y": 2, "size": 5},
+    {"id": "9", "label": "Kataate Prossy", "x":8, "y": 0, "size": 5, "color": "#ec5148"},
+    {"id": "10", "label": "Namutebi Rhona", "x":0, "y": 7, "size": 5},
+    {"id": "11", "label": "Mugisha Jack", "x":2, "y": 1, "size": 5},
+    {"id": "12", "label": "Nakato Fai", "x":2, "y": 0, "size": 5},
+    {"id": "13", "label": "Rosey Prossy", "x":6, "y": 8, "size": 5},
+    {"id": "14", "label": "Nakato Kate", "x":0, "y": 9, "size": 5},
+    {"id": "15", "label": "Jane Fish", "x":9, "y": 2, "size": 5},
+    {"id": "16", "label": "Mbye Prossy", "x":6, "y": 7, "size": 5}
   ],
   "edges": [
-    {
-      "id": "e0",
-      "source": "n0",
-      "target": "n1"
-    },
-    {
-      "id": "e1",
-      "source": "n1",
-      "target": "n2"
-    },
-    {
-      "id": "e2",
-      "source": "n2",
-      "target": "n0"
-    }
+    { "id": "e0", "source": "7", "target": "1" },
+    { "id": "e1", "source": "7", "target": "5" },
+    { "id": "e2", "source": "7", "target": "2" },
+    { "id": "e3", "source": "7", "target": "16" },
+    { "id": "e4", "source": "2", "target": "5" },
+    { "id": "e6", "source": "13", "target": "10" },
+    { "id": "e7", "source": "1", "target": "10" },
+    { "id": "e8", "source": "14", "target": "10" },
+    { "id": "e9", "source": "14", "target": "6" },
+    { "id": "e10", "source": "6", "target": "3" },
+    { "id": "e11", "source": "5", "target": "3" },
+    { "id": "e12", "source": "1", "target": "13" },
+    { "id": "e13", "source": "14", "target": "13" },
+    { "id": "1", "source": "12", "target": "11"},
+    { "id": "2", "source": "12", "target": "8"},
+    { "id": "3", "source": "11", "target": "8"},
+    { "id": "4", "source": "8", "target": "4"},
+    { "id": "5", "source": "8", "target": "15"},
+    { "id": "6", "source": "4", "target": "15"},
+    { "id": "7", "source": "9", "target": "4"},
+    { "id": "8", "source": "9", "target": "15"},
+    { "id": "e5", "source": "16", "target": "13" }
   ]
 }
