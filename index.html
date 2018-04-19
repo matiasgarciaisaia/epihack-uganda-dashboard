@@ -1,29 +1,40 @@
 <html>
-    <head>
-        <style type="text/css">
-          #network-container {
-            max-width: 400px;
-            height: 400px;
-            margin: auto;
-          }
-        </style>
-        <script src="sigma.min.js"></script>
-        <script src="sigma.parsers.json.min.js"></script>
-        </head>
+
+<head>
+  <style type="text/css">
+    /* #network-container {
+      max-width: 400px;
+      height: 400px;
+      margin: auto;
+    } */
+    .graph-container {
+      height: 523px;
+      width: 600px;
+    }
+  </style>
+  <script src="sigma.min.js"></script>
+  <script src="sigma.parsers.json.min.js"></script>
+</head>
+
 <body>
   <div style="display: inline-block;">
-    <div style="height: 500px; width: 600px"><script src="https://gist.github.com/matiasgarciaisaia/4aa7f19877e4975bb3ede89203108fa0.js"></script></div>
-    <div id="network-container"></div>
-    <script>
-        sigma.parsers.json('epihack-network-data.json', {
-          container: 'network-container',
-          settings: {
-            defaultNodeColor: '#ec5148'
-          }
-        });
-      </script>
-    <iframe height="500" width="600" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ43_PjoEn86BgKHeuUC6QmKm9TEojn2Cs0SGYepvEh7VsYaz4la5d7bVtA22Nx64A6FLr5Qj_iYvnn/pubhtml?gid=1559569778&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-    <iframe height="500" width="600" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ43_PjoEn86BgKHeuUC6QmKm9TEojn2Cs0SGYepvEh7VsYaz4la5d7bVtA22Nx64A6FLr5Qj_iYvnn/pubhtml?gid=1042104556&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    <div>
+      <iframe class="graph-container" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ43_PjoEn86BgKHeuUC6QmKm9TEojn2Cs0SGYepvEh7VsYaz4la5d7bVtA22Nx64A6FLr5Qj_iYvnn/pubhtml?gid=1559569778&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+      <iframe class="graph-container" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ43_PjoEn86BgKHeuUC6QmKm9TEojn2Cs0SGYepvEh7VsYaz4la5d7bVtA22Nx64A6FLr5Qj_iYvnn/pubhtml?gid=1042104556&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </div>
+    <div>
+      <div class="graph-container" style="height: 600px; width: 600px; float: left;"><script src="https://gist.github.com/matiasgarciaisaia/4aa7f19877e4975bb3ede89203108fa0.js"></script></div>
+      <div class="graph-container" id="network-container"></div>
+    </div>
   </div>
+  <script>
+    sigma.parsers.json('epihack-network-data.json', {
+      container: 'network-container',
+      settings: {
+        defaultNodeColor: '#ec5148'
+      }
+    });
+  </script>
 </body>
+
 </html>
